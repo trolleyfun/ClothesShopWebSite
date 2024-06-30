@@ -21,6 +21,7 @@
                     <li><a href="#">Контакты</a></li>
                     <li><a href="#"><img src="./img/cart.png" alt="Корзина"></a></li>
                 </ul>
+                <a href="#" class="menubtn"><img src="./img/menu.png" alt="Меню"></a>
             </nav>
             <div class="header-content">
                 <div class="header-text">
@@ -175,5 +176,15 @@
             <p>&copy; Store, 2024</p>
         </div>
     </footer>
+
+    <!-- Menu button for mobile devices -->
+    <script>
+        const menubtn = document.querySelector(".menubtn");
+        const navlist = document.querySelector(".navlist");
+
+        menubtn.addEventListener('click', ()=>{
+            navlist.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

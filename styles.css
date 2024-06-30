@@ -35,6 +35,24 @@ ul {
     margin: auto;
 }
 
+/* Buttons */
+.menubtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+}
+.button {
+    padding: 10px 16px;
+    margin-top: 30px;
+    background-color: var(--theme);
+    color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 /* Header Section */
 .header {
     background-color: var(--bg);
@@ -79,16 +97,6 @@ ul {
 }
 .header-text h3, p {
     margin: 15px 0;
-}
-.button {
-    padding: 10px 16px;
-    margin-top: 30px;
-    background-color: var(--theme);
-    color: whitesmoke;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    cursor: pointer;
 }
 
 /* Category Section */
@@ -162,4 +170,37 @@ footer p, .col li, .col li a {
 .copyright {
     text-align: center;
     padding: 10px 0;
+}
+
+/* For mobile devices */
+@media only screen and (max-width:750px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .navlist {
+        flex-direction: column;
+        background-color: var(--footerBg);
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: -900px;
+        transition: all 1s ease-in-out; /* click on menu button */
+    }
+    .navlist.active {
+        margin-top: 0;
+    }
+    .navlist li {
+        margin: 20px 0;
+    }
+    .navlist li a {
+        color: #a6c4e2;
+    }
+    .brand img {
+        width: 100px;
+    }
+    .container {
+        width: 90%;
+    }
 }
