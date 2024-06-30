@@ -132,3 +132,34 @@ ul {
 #offer h1 {
     font-size: 40px;
 }
+
+/* Featured Companies Section */
+#featured-companies {
+    margin: 150px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Footer */
+footer {
+    background-color: var(--footerBg);
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+}
+.footer-content .col {
+    flex: 1;
+    margin: 0 20px;
+}
+footer h3 {
+    color: whitesmoke;
+}
+footer p, .col li, .col li a {
+    color: #a6c4e2;
+}
+.copyright {
+    text-align: center;
+    padding: 10px 0;
+}
