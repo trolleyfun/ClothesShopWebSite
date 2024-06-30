@@ -75,7 +75,7 @@ ul {
     background-color: var(--theme);
 }
 .header-text h1 {
-    font-weight: 50px;
+    font-size: 50px;
 }
 .header-text h3, p {
     margin: 15px 0;
@@ -115,4 +115,20 @@ ul {
 .section-products {
     display: flex;
     justify-content: space-between;
+}
+
+/* Offer Section */
+#offer {
+    margin: 80px auto;
+    background-color: var(--bg);
+}
+#offer .container {
+    display: flex;
+    align-items: center;
+}
+#offer .container img {
+    max-width: 600px;
+}
+#offer h1 {
+    font-size: 40px;
 }
