@@ -36,11 +36,12 @@ ul {
 }
 
 /* Buttons */
-.menubtn {
+.menubtn img {
     position: absolute;
     top: 20px;
     right: 20px;
     width: 30px;
+    display: none;
 }
 .button {
     padding: 10px 16px;
@@ -180,6 +181,9 @@ footer p, .col li, .col li a {
 @media only screen and (max-width:750px) {
 
     /* Navigation Section */
+    .menubtn img {
+        display: block;
+    }
     .navbar {
         flex-direction: column;
     }
