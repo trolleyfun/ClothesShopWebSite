@@ -82,6 +82,7 @@ ul {
 }
 .header-content img {
     max-width: 90%;
+    display: block;
 } 
 .header-text { 
     flex: 60%;
@@ -119,6 +120,9 @@ ul {
     justify-content: center;
     align-items: center;
     margin: 80px auto;
+}
+.section-info h1 {
+    font-size: 40px;
 }
 .section-products {
     display: flex;
@@ -174,6 +178,8 @@ footer p, .col li, .col li a {
 
 /* For mobile devices */
 @media only screen and (max-width:750px) {
+
+    /* Navigation Section */
     .navbar {
         flex-direction: column;
     }
@@ -202,5 +208,75 @@ footer p, .col li, .col li a {
     }
     .container {
         width: 90%;
+    }
+
+    /* Header-content Section */
+    .header {
+        height: 100%;
+    }
+    .header-content {
+        margin: 50px auto;
+        flex-direction: column;
+    }
+    .header-content h1 {
+        font-size: 40px;
+    }
+    .header-content img {
+        margin: 30px auto;
+    }
+    .line {
+        width: 100px;
+    }
+
+    /* Categories Section */
+    #categories {
+        flex-direction: column;
+    }
+    .category {
+        margin: 20px auto;
+    }
+    .category img {
+        max-width: 90%;
+    }
+
+    /* Featured Products Section */
+    .section-products {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .section-info h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .product {
+        margin: 20px auto;
+        text-align: center;
+    }
+    .product img {
+        max-width: 90%;
+    }
+
+    /* Offer Section */
+    #offer .container {
+        flex-direction: column;
+        padding: 40px;
+    }
+    #offer .container img {
+        max-width: 90%;
+    }
+    #offer .container h1 {
+        font-size: 30px;
+    }
+    .offer-content {
+        margin-top: 20px;
+    }
+
+    /* Featured Companies Section */
+    #featured-companies {
+        flex-direction: column;
+        margin: 80px auto;
+    }
+    #featured-companies img {
+        margin: 30px auto;
     }
 }
