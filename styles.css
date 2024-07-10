@@ -64,11 +64,15 @@ ul {
 header {
     background-color: var(--bg);
     width: 100vw;
-    height: 90vh;
+    height: 100%;
+}
+header .container {
+    padding: 20px 0;
 }
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .navlist {
     display: flex;
@@ -79,6 +83,8 @@ header {
 }
 .navlist li a {
     color: var(--heading);
+    font-size: 18px;
+    font-weight: bold;
 }
 .navlist li img {
     width: 50px;
@@ -194,6 +200,7 @@ header {
 /* Footer */
 footer {
     background-color: var(--footerBg);
+    width: 100vw;
 }
 .footer-content {
     display: flex;
@@ -217,7 +224,6 @@ footer p, .col li, .col li a {
 
 /* For mobile devices */
 @media only screen and (max-width:750px) {
-
     h1 {
         font-size: 30px;
     }
@@ -231,6 +237,7 @@ footer p, .col li, .col li a {
     }
     .navbar {
         flex-direction: column;
+        align-items: start;
     }
     .navlist {
         flex-direction: column;
@@ -241,11 +248,11 @@ footer p, .col li, .col li a {
         position: absolute;
         top: 0;
         right: 0;
-        margin-right: -900px;
+        margin-top: -900px;
         transition: all 1s ease-in-out; /* click on menu button */
     }
     .navlist.active {
-        margin-right: 0;
+        margin-top: 0;
     }
     .navlist li {
         margin: 0;
@@ -266,12 +273,6 @@ footer p, .col li, .col li a {
     }
 
     /* Header-content Section */
-    header {
-        height: 100%;
-    }
-    header .container {
-        padding: 20px 0;
-    }
     .header-content {
         flex-direction: column;
     }
