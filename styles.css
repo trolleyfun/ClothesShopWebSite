@@ -61,9 +61,6 @@ ul {
 header {
     background-color: var(--bg);
     width: 100vw;
-    /* height: 90vh; */
-}
-header .container {
     height: 90vh;
 }
 .navbar {
