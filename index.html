@@ -15,10 +15,11 @@
                     <img src="./img/logo.png" alt="Логотип">
                 </div>
                 <ul class="navlist">
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Каталог</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#categories">Категории</a></li>
+                    <li><a href="#featured-products">Каталог</a></li>
+                    <li><a href="#offer">Акции</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                     <li><a href="#"><img src="./img/cart.png" alt="Корзина"></a></li>
                 </ul>
             </nav>
@@ -139,7 +140,7 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content container">
+        <div class="footer-content container" id="contacts">
             <div class="col">
                 <img src="./img/logoFooter.png" alt="Логотип">
                 <p>Магазин одежды <b>Store</b> предлагает широкий ассортимент продукции известных брендов. Приходи и убедись!</p>
@@ -148,10 +149,11 @@
             <div class="col">
                 <h3>О компании</h3>
                 <ul>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Каталог</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#categories">Категории</a></li>
+                    <li><a href="#featured-products">Каталог</a></li>
+                    <li><a href="#offer">Акции</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
             </div>
 
@@ -183,9 +185,17 @@
     <script>
         const menubtn = document.querySelector(".menubtn");
         const navlist = document.querySelector(".navlist");
+        const productbtn = document.querySelectorAll(".button");
+        const products = document.querySelector("#featured-products");
 
         menubtn.addEventListener('click', ()=>{
             navlist.classList.toggle('active');
+        });
+
+        productbtn.forEach((item) => {
+            item.addEventListener('click', ()=>{
+                products.scrollIntoView();
+            });
         });
     </script>
 </body>
