@@ -23,12 +23,12 @@
                     <img src="./img/logo.png" alt="Логотип">
                 </div>
                 <ul class="navlist">
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="index.html#categories">Категории</a></li>
-                    <li><a href="index.html#featured-products">Каталог</a></li>
-                    <li><a href="index.html#offer">Акции</a></li>
-                    <li><a href="index.html#contacts">Контакты</a></li>
-                    <li><a href="index.html"><img src="./img/cart.png" alt="Корзина"></a></li>
+                    <li><a href="index.html" class="menubtn">Главная</a></li>
+                    <li><a href="#categories" class="menubtn">Категории</a></li>
+                    <li><a href="#featured-products" class="menubtn">Каталог</a></li>
+                    <li><a href="#offer" class="menubtn">Акции</a></li>
+                    <li><a href="#contacts" class="menubtn">Контакты</a></li>
+                    <li><a href="index.html"><img src="./img/cart.png" alt="Корзина" class="menubtn"></a></li>
                 </ul>
             </nav>
             <a href="#" class="menubtn"><img src="./img/menu.png" alt="Меню"></a>
@@ -191,13 +191,15 @@
 
     <!-- Menu button for mobile devices -->
     <script>
-        const menubtn = document.querySelector(".menubtn");
+        const menubtn = document.querySelectorAll(".menubtn");
         const navlist = document.querySelector(".navlist");
         const productbtn = document.querySelectorAll(".button");
         const products = document.querySelector("#featured-products");
 
-        menubtn.addEventListener('click', ()=>{
+        menubtn.forEach((btn_item) => {
+            btn_item.addEventListener('click', ()=>{
             navlist.classList.toggle('active');
+        });
         });
 
         productbtn.forEach((item) => {
